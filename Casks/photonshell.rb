@@ -1,6 +1,6 @@
 cask "photonshell" do
-  version "0.0.1-a2"
-  sha256 "258ff39001b20d3bdba7f542683fae21f5c7ce1a37e02fc7e3e0702034b986d0"
+  version "0.0.1-a5"
+  sha256 "8cb33b63d912192d8cda19eaf3751639b4b11131ade0814a51dedf3663dfadf4"
 
   url "https://photonshell.stennmedia.nl/releases/photonshell-#{version}-macos-arm64.dmg"
   name "PhotonShell"
@@ -11,7 +11,6 @@ cask "photonshell" do
 
   app "photonshell.app"
 
-  # Remove Gatekeeper quarantine flag
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/photonshell.app"],
