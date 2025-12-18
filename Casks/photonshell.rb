@@ -1,6 +1,6 @@
 cask "photonshell" do
-  version "0.0.1-a5"
-  sha256 "8cb33b63d912192d8cda19eaf3751639b4b11131ade0814a51dedf3663dfadf4"
+  version "0.0.1-a6"
+  sha256 "1dcc7e6c00f8001b31782d338f8b00efb9fbb8eecfbd2ff60e9928f711644b6d"
 
   url "https://photonshell.stennmedia.nl/releases/photonshell-#{version}-macos-arm64.dmg"
   name "PhotonShell"
