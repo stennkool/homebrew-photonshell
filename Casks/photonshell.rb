@@ -6,6 +6,7 @@ cask "photonshell" do
   name "PhotonShell"
   desc "Next-generation AI-powered terminal emulator"
   homepage "https://photonshell.stennmedia.nl"
+  auto_updates true
 
   depends_on macos: ">= :ventura"
 
