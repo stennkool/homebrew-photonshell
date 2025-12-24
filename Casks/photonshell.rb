@@ -1,8 +1,8 @@
 cask "photonshell" do
-  version "0.0.1-a10"
-  sha256 "260ef164c9986302cac6657ea1fa25e9b95fc2747dda528991cb9da12f5b8bbb"
+  version "0.0.1-a11"
+  sha256 "5383f75682f0d3a4b8aff2726e48dd0c1ef28e3ac28515048f4bf85b5c82ea81"
 
-  url "https://photonshell.stennmedia.nl/releases/photonshell-#{version}-macos-arm64.dmg"
+  url "https://photonshell.stennmedia.nl/releases/PhotonShell-#{version}-macos-arm64.dmg"
   name "PhotonShell"
   desc "Next-generation AI-powered terminal emulator"
   homepage "https://photonshell.stennmedia.nl"
@@ -10,11 +10,11 @@ cask "photonshell" do
 
   depends_on macos: ">= :ventura"
 
-  app "photonshell.app"
+  app "PhotonShell.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/photonshell.app"],
+                   args: ["-cr", "#{appdir}/PhotonShell.app"],
                    sudo: false
   end
 
