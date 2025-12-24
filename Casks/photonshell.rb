@@ -10,11 +10,11 @@ cask "photonshell" do
 
   depends_on macos: ">= :ventura"
 
-  app "PhotonShell.app"
+  app "photonshell.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/PhotonShell.app"],
+                   args: ["-cr", "#{appdir}/photonshell.app"],
                    sudo: false
   end
 
