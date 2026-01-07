@@ -2,10 +2,10 @@ cask "photonshell" do
   version "0.0.1-a14"
   sha256 "af8a72b90f0831de3bf790a1dca7d116e213513dccacc6b9ee1d3f280858f0d2"
 
-  url "https://photonshell.stennmedia.nl/releases/PhotonShell-#{version}-macos-arm64.dmg"
+  url "https://www.photonshell.com/releases/PhotonShell-#{version}-macos-arm64.dmg"
   name "PhotonShell"
   desc "Next-generation AI-powered terminal emulator"
-  homepage "https://photonshell.stennmedia.nl"
+  homepage "https://www.photonshell.com"
   auto_updates true
 
   depends_on macos: ">= :ventura"
