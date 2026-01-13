@@ -12,6 +12,11 @@ cask "photonshell" do
 
   app "photonshell.app"
 
+  livecheck do
+    url "https://www.photonshell.com/releases/appcast.xml"
+    strategy :sparkle, &:short_version
+  end
+
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/photonshell.app"],
