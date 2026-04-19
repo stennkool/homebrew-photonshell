@@ -1,6 +1,6 @@
 cask "photonshell" do
-  version "0.0.1-a21"
-  sha256 "57dfd9edcc065c3a6ddfb669c765e63ff020508f5f06d2719695dcabda4069da"
+  version "0.0.1-a27"
+  sha256 "09e23aad4249b05b61f43a3d92acdfbe8ebfd9058bdbdfbc51761cab736cf9c8"
 
   url "https://www.photonshell.com/releases/PhotonShell-#{version}-macos-arm64.dmg"
   name "PhotonShell"
@@ -10,11 +10,11 @@ cask "photonshell" do
 
   depends_on macos: ">= :ventura"
 
-  app "photonshell.app"
+  app "PhotonShell.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/photonshell.app"],
+                   args: ["-cr", "#{appdir}/PhotonShell.app"],
                    sudo: false
   end
 
