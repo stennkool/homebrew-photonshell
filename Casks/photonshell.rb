@@ -8,7 +8,7 @@ cask "photonshell" do
   homepage "https://www.photonshell.com"
   auto_updates true
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "PhotonShell.app"
 
